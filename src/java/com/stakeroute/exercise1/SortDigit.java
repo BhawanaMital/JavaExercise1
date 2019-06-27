@@ -3,18 +3,8 @@ package com.stakeroute.exercise1;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Sort_digit {
+public class SortDigit {
 
-        public static void main(String args[]){
-            Scanner sc=new Scanner(System.in);
-            System.out.println("Enter the number");
-            int input=sc.nextInt();
-            SortNumb sn=new SortNumb();
-            sn.sortNumber(input);
-        }
-    }
-
-    class SortNumb {
         String compare(int a,int b) {
             if (a > 15) {
                 return ("True");
@@ -23,7 +13,7 @@ public class Sort_digit {
             }
         }
 
-        public void sortNumber(int n) {
+        public String sortNumber(int n) {
 
             char[] ch = String.valueOf(n).toCharArray();
             Arrays.sort(ch);
@@ -38,8 +28,7 @@ public class Sort_digit {
                 str = c + str;
             }
             String res=compare(sum, 15);
-            System.out.println( "Sorted number in non-increasing order : " + str + "\n" +
-                    "Sum of even numbers : " + sum + "\n" +res );
+            return (str +" \n" + "Sum of even numbers : " + sum + "\n" +res );
 
         }
     }
