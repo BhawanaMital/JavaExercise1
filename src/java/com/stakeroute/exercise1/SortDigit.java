@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class SortDigit {
 
+        //Checking whether the sum of even number is greater than 15 or not
         String compare(int a,int b) {
             if (a > 15) {
                 return ("True");
@@ -16,8 +17,12 @@ public class SortDigit {
         public String sortNumber(int n) {
 
             char[] ch = String.valueOf(n).toCharArray();
+
+            //Sorting the array using Array class
             Arrays.sort(ch);
             int sum = 0;
+
+            //Checking the digit in even or not
             for (char c : ch) {
                 if (((int) c) % 2 == 0) {
                     sum += (int) c - (int) '0';

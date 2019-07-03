@@ -8,6 +8,7 @@ public class Setlimit {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
+        //Setting the range between 1-100
         int target = new Random().nextInt(100 - 1);
         System.out.println("Guess  a num");
         int guess = sc.nextInt();
@@ -19,8 +20,9 @@ public class Setlimit {
     public static String Setnum(int target, int guess) {
         Scanner sc = new Scanner(System.in);
         while (true) {
-            if (guess == target) {
 
+            //Printing the message according to the guess number
+            if (guess == target) {
                 return ("Number guessed matches the original number");
             } else if (guess > target) {
                 guess = sc.nextInt();

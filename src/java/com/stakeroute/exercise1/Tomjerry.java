@@ -9,6 +9,7 @@ public class Tomjerry {
     public static String checkInt(int input) {
         int n = input % 10;
 
+        //Setting the limit and returning the output
         if ((input > 20) && (input <30)) {
             if (n % 2 == 0) {
                 return ("Jerry");

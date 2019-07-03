@@ -8,6 +8,8 @@ public class Addnum {
     public int sumOfNumbers(String st) {
         String[] str = st.split(" ");
         int sum = 0;
+
+        //Adding the number using try catch
         try {
             for (String s : str) {
                 sum += Integer.parseInt(s);

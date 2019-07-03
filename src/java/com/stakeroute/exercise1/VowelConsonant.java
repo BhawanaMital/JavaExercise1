@@ -12,6 +12,8 @@ public class VowelConsonant {
                 c = input1.charAt(l);
                 if(Character.isLetter(c))
                 {
+
+                    //Checking wheher the string consists of vowel or not
                     if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
                         output=output+"Vowel"+" ";
                     }

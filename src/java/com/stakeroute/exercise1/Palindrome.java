@@ -12,6 +12,7 @@ public class Palindrome {
         int n;
         String output;
 
+        //Reverse Logic
 
         while (input2 >0) {
             n=input2 % 10;
@@ -20,6 +21,7 @@ public class Palindrome {
 
         }
 
+        //Matching the input value with reverse value
         if (input1== rev) {
             int sum_even=0;
             int input3=input1;
@@ -38,7 +40,7 @@ public class Palindrome {
 
             }
 
-
+            //Checking whether the sum is greater than 25 or not
             if(sum_even<25)
             {
                 return (input1+" is a palindrome number and the sum of even number is less than 25");

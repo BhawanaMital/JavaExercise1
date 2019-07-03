@@ -6,6 +6,8 @@ public class ReverseNum {
 
     public static String  Reversenum(String n)
     {
+
+        //Reversing the number using toCharArray method
         String output="";
         char ch[]=n.toCharArray();
         for (int i=ch.length-1;i>=0;i--)
